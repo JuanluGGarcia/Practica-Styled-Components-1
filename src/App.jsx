@@ -1,5 +1,4 @@
 import Card from './components/card/Card';
-import GridContainer from './components/gridContainer/GridContainer';
 import { CARDSINFO } from './constants/cardsInfo';
 import { GlobalStyles } from './styles/global-styles';
 
@@ -9,7 +8,7 @@ const App = () => {
 			<GlobalStyles />
 
 			<div className='wrapper-grid'>
-				<GridContainer>
+				{/* <GridContainer> */}
 					{CARDSINFO.map(card => {
 						return (
 							<Card
@@ -24,7 +23,7 @@ const App = () => {
 							/>
 						);
 					})}
-				</GridContainer>
+				{/* </GridContainer> */}
 			</div>
 		</>
 	);

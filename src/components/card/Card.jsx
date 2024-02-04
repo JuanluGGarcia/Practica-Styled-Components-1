@@ -1,4 +1,5 @@
 import {
+	// StyledWrapper,
     StyledCardContainer,
 	StyledImage,
 	StyleLongOpinion,
@@ -13,19 +14,22 @@ const Card = props => {
 	console.log(props);
 	return (
 		<>
-			<StyledCardContainer $bgColor={props.$bgColor} $foreColor={props.$foreColor}>
-				<StyledHeader>
-					<StyledImage>
-						<img src={props.image} alt='' />
-					</StyledImage>
-					<StyledUser>
-						<StyleName>{props.name}</StyleName>
-						<StyleVerified>{props.verified}</StyleVerified>
-					</StyledUser>
-				</StyledHeader>
-				<StyleShortOpinion >{props.shortOpinion}</StyleShortOpinion>
-				<StyleLongOpinion>{props.longOpinion}</StyleLongOpinion>
-			</StyledCardContainer>
+			{/* <StyledWrapper> */}
+				<StyledCardContainer $bgColor={props.$bgColor} $foreColor={props.$foreColor}>
+					<StyledHeader>
+						<StyledImage >
+							<img src={props.image} alt='' />
+						</StyledImage>
+						<StyledUser>
+							<StyleName>{props.name}</StyleName>
+							<StyleVerified>{props.verified}</StyleVerified>
+						</StyledUser>
+					</StyledHeader>
+					<StyleShortOpinion >{props.shortOpinion}</StyleShortOpinion>
+					<StyleLongOpinion>{props.longOpinion}</StyleLongOpinion>
+				</StyledCardContainer>
+			{/* </StyledWrapper> */}
+			
 		</>
 	);
 };
