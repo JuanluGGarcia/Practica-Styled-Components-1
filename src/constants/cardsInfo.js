@@ -11,7 +11,7 @@ export const CARDSINFO = [
         $bgColor: '#733FC8',
         $foreColor: '#CFCFCF',
         $gridArea: 'one',
-        
+
 
     },
     {

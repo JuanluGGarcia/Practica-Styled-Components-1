@@ -12,8 +12,6 @@ const GridContainer = styled.div`
 		'three'
 		'four'
 		'five'; */
-
-
 	@media (min-width: 50em) {
 		grid-template-areas:
 			'one'
